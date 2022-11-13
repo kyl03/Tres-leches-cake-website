@@ -64,6 +64,9 @@ nav{
   flex-direction:row;
   justify-content: space-evenly;
   font-family: myFirstFont;
+  color: #FFF;
+  visibility: hidden; 
+ 
 
 }
 
@@ -185,13 +188,7 @@ a{
 h3{
   color: grey;
 }
-.link{
-  color: grey;
-  text-decoration: none;
-}
-.link:hover{
-  color: var(--h1--color);
-}
+
 @keyframes prueba{
   0%{
     opacity: 1;
@@ -270,16 +267,35 @@ ol, p{
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
+  .navbar .menu {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 992px) {
   header {
     height: 125px;
     background-image: url(/img/tabletsheader.png);
   }
+  nav{
+    display: flex;
   
+  }
+  .link{
+    visibility: visible; 
+    display:inline; 
+    color: grey;
+    text-decoration: none;
+  }
+  .link:hover{
+    color: var(--h1--color);
+  }
 }
 
+
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   header {
     height: 150px;
     background-image: url(/img/desktopsheader.png);
@@ -288,7 +304,7 @@ ol, p{
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   header {
     height: 180px;
     background-image: url(/img/largedesktopsheader.png);
