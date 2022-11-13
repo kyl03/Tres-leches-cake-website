@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres leches cake</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header id="header" class="section1">
+        <!-- Header deberá tener 1 imagen de fondo, optimizada para distintas resoluciones
+            (opcional). -->
+            <h1 class="title">Tres leches cake</h1>
+       
+    </header>
+    <nav>
+        <!--Barra de navegación con links a cada elemento del protfolio. Todos los links tendrán
+            que tener el estado hover suavizado con una transición. Estos links no son
+            necesarios en la versión mobile como viene en los anexos.-->
+                <a class="link" href="#about">About me</a>
+                <a class="link" href="#skills">Properties</a>
+                <a class="link" href="#contacto">Contact</a>    
+    </nav>
+
+
+    <main >
+        <section class="section2" id="about">
+            <!-- Informacion sobre mi-->
+              <h2>About</h2>
+              <h1>Me</h1>
+              <p>
+                I am a sponge cake—soaked in three kinds of milk: evaporated milk, condensed milk, and whole milk. I am a very light cake, with many air bubbles.
+              </p>
+              <h1>How to make me:</h1>
+              <ol>
+                <li>
+                    In a medium bowl combine flour, baking powder, and salt. Separate the eggs into two other mixing bowls.
+                </li>
+                <li>Add ¾ cup sugar to the bowl with the egg yolks and mix on high speed until yolks are pale yellow. Add ⅓ cup milk and vanilla and stir to combine. Pour the egg yolk mixture over the flour mixture and stir gently just until combined (don’t over-mix).</li>
+                <li>Use electric beaters to beat the egg whites on high speed. As the begin to whip into stiff peaks, gradually mix in the remaining ¼ cup of sugar. Fold the stiffly beaten egg whites into the batter gently, scraping the bottom and sides of the bowl, until combined.</li>
+                <li>Pour batter into prepared pan and smooth it into an even layer. Bake for 25 to 35 minutes, or until a toothpick inserted in the center of the cake comes out clean. Remove from the oven and allow cake to cool completely.</li>
+                <li>Combine the evaporated milk, sweetened condensed milk, and whole milk in a small bowl. Once the cake has cooled use a fork to poke holes all over the top of the cake.</li>
+                <li>Slowly pour the milk mixture over the the top of the cake, making sure to pour near the edges and all around. Refrigerate the cake for at least 1 hour or overnight, to allow it to soak up the milk.</li>
+                <li>In the meantime, whip the heavy cream, sugar and vanilla until stiff peaks. Smooth over the top of the cake.</li>
+                <li>Serve with a sprinkle of cinnamon on top, and fresh sliced strawberries, if desired. Store Tres Leches Cake in the refrigerator, covered, for 3-5 days.</li>
+            </ol>
+            </section>
+        <section id="skills" class="section1">
+            <h2>My</h2>
+            <h1>Properties</h1>
+        <!-- Una sección con nuestras skill de programación y progreso de las mismas. Esta
+            sección tiene que contar con barras de progreso animadas con animaciones css-->
+            <div class="container">
+                <h3>Deliciousness</h2>
+                <div class="item1"></div>
+                <h3>Recipe level</h2>
+                <div class="item2"></div>
+                <h3>Calories</h2>
+                <div class="item3"></div>
+              </div>
+        </section>
+        <section id="contacto" class="section2 contact">
+            <!-- ● Formulario de contacto con estos inputs. Todos ellos tienen que tener tanto los tipos
+            correctos como la validación html de cada input.
+            ○ Nombre - (requerido)
+            ○ Apellidos - (requerido)
+            ○ Telefono - (requerido) -->
+            <div>
+                <form action="registro-completado.html" method="post" novalidate>
+                    <legend>Contact form:</legend>
+                    <div> 
+                        <label for="name">First name</label>
+                        <input id="name" name="name" type="text" placeholder="Type your First name" required pattern="@([a-z][A-Z])+
+                        ">
+                    </div>
+                    <div> 
+                        <label for="mail">Last name</label>
+                        <input id="mail" name="email" type="text" placeholder="Type your last name" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]+">
+                    </div>
+                </form>
+            </div>
+     
+                <div>
+                     <!-- Unos radio button para responder a la pregunta "¿como me conociste?" -
+                        (requerido)
+                        ■ Universidad
+                        ■ Keepcoding kick-off
+                        ■ Colegio
+                        ■ En Github
+                        ○ Tag de github (Usar regexp para la validación - @username)
+                        ○ descripción (max 180 characters) - (requerido)
+                        ○ Boton de guardado -->
+                <fieldset>
+                    <legend>How did you meet me?</legend>
+                    <div>
+                        <ul>
+                            <input id="js"type="radio" name="lenguaje" value="Universidad" required>
+                            <label for="js">University</label>
+                           
+                        </ul>
+                        <ul>
+                            <input id="python"type="radio" name="lenguaje" value="Keepcoding" required>
+                            <label for="python">Keepcoding kick-off</label>
+                        </ul>
+                        <ul>
+                            <input id="net" type="radio" name="lenguaje" value="Colegio" required>
+                            <label for="net">School</label>
+                        </ul>
+                        <ul>
+                            <input id="github" type="radio" name="lenguaje" value="Github" required>
+                            <label for="net">Github</label>
+                            <div>
+                                <legend for="github">Github tag:</legend>
+                                <input type="github" id="github" name="github" pattern="^@[^\s]+">
+                            </div>
+                        </ul>
+                        <ul>
+                            <div>
+                                <legend for="bio">Description:</legend>
+                            </div>
+                         
+                            <div>
+                                <textarea name="bio" id="" cols="30" rows="10"></textarea>
+                            </div>
+                           
+                        </div>
+                        <div>
+                            <input type="submit" value="Save" class="button">
+                        </div>
+                        </ul>
+                    </div>
+                </fieldset>
+                </div>
+        </section>
+        <!-- <section id="fuente" class="section1"> -->
+           
+        </section>
+    </main>
+   
+    <footer>
+        <!-- Footer con links a nuestras redes sociales. Importante tener en cuenta que son links
+        a un recurso externo y tenemos no queremos dejar información nuestra en esas
+        webs. -->
+        <a href="https://www.facebook.com/" target="_blank"><img class="facebook" src="/img/fb1.jpg.png"></img></a>
+        <a href="https://twitter.com/a" target="_blank"><img class="twitter"  src="/img/twitter.png"></img></a>
+        <a href="https://www.youtube.com/" target="_blank"><img class="instagram"  src="/img/instagram.jpg.png"></img></a>
+    </footer>
+    
+</body>
+</html>
