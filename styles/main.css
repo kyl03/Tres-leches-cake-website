@@ -1,0 +1,317 @@
+/* CSS variables */
+:root {
+    --primary-color: #fffae6;
+    --section2-color: white;
+    --section1-color: #ffaec8;
+    --h2--color: grey;
+    --h1--color:#8efcfb;
+
+    font-size: 16px;
+
+    
+  }
+  @font-face {
+    font-family: myFirstFont;
+    src: url(/Sofia-Regular.ttf);
+  }
+  body{
+    font-family: Verdana, Tahoma, sans-serif;
+    
+  }
+  html,body{
+    overflow-x: hidden;
+}
+  section{
+    width: 100vw;;
+    height: fit-content;
+    display: flex;
+    padding: 10px;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items: top;
+  }
+  .section1{
+    background-color: var(--section1-color);
+  }
+  .section2{
+    background-color: var(--section2-color);
+    
+  }
+  h1{
+    font-family: myFirstFont;
+    color: var(--h1--color);
+    font-size: xx-large;
+    text-indent: 3%
+    
+
+  }
+  h2{
+    font-size: large;
+    color: var(--h2--color);
+  }
+header {
+    width: 100%;
+    height: 100px;
+    background-image: url(/img/mobileheader.png);
+    background-size:contain;
+    background-color: var(--section2-color);
+    background-repeat: no-repeat;
+  }
+  
+nav{
+  display: flex;
+  background-color: var(--section1-color);
+  flex-direction:row;
+  justify-content: space-evenly;
+  font-family: myFirstFont;
+
+}
+
+
+form{
+    margin-bottom: 20px;
+  }
+
+  div{
+    margin: 15px;
+  }
+ 
+  label{
+    font-size: medium;
+    margin-bottom: 8px;
+ 
+    
+  }
+  legend{
+    font-size: larger;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-family: myFirstFont;
+
+    
+  }
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color:var(--section1-color);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    font-family: myFirstFont;
+  }
+  footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    background-color: var(--section1-color);
+}
+img{
+  width: 33%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.5s linear;
+}
+a{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.facebook:hover{
+  content: url(/img/fb2.jpg.png);
+}
+.instagram:hover{
+  content: url(/img/instagram2.jpg.png);
+}
+.twitter:hover{
+  content: url(/img/twitter2.png);
+}
+.container{
+  padding: 5%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: star;
+  flex-wrap: wrap;
+}
+.item1{
+  height: 15px;
+  margin: 5%;
+  width: 90%;
+  border-radius: 5px;
+  border-style: double;
+  border-color: black;
+  background-color: var(--h1--color);
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: star;
+
+}
+.item2{
+  height: 15px;
+  margin: 5%;
+  width: 70%;
+  border-radius: 5px;
+  border-style: double;
+  border-color: black;
+  background-color: var(--h1--color);
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: star;
+
+}
+.item3{
+  height: 15px;
+  margin: 5%;
+  width: 60%;
+  border-radius: 5px;
+  border-style: double;
+  border-color: black;
+  background-color: var(--h1--color);
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: star;
+}
+
+h3{
+  color: grey;
+}
+.link{
+  color: grey;
+  text-decoration: none;
+}
+.link:hover{
+  color: var(--h1--color);
+}
+@keyframes prueba{
+  0%{
+    opacity: 1;
+    background-color: var(--h1--color);
+    width: 20%;
+  }
+  90%{
+    opacity: 1;
+    background-color: var(--h1--color);
+    width: 90%;
+  }
+ 
+}
+@keyframes example {
+  0% {
+
+    opacity: 0;
+    width: 20%;
+  }
+  20% {
+    opacity: 1;
+    width: 70%;
+  }
+  70% {
+    opacity: 0;
+    width: 20%;
+  }
+  90% {
+    background-color: var(--h1--color);
+    opacity: 1;
+    width: 90%;
+  }
+}
+@keyframes example2 {
+  0% {
+    background-color: var(--h1--color);
+    opacity: 0;
+    width: 20%;
+  }
+  20% {
+    opacity: 1;
+    width: 70%;
+  }
+  70% {
+    opacity: 0;
+    width: 20%;
+  }
+  90% {
+    background-color: var(--h1--color);
+    opacity: 1;
+    width: 50%;
+  }
+}
+.item1, .item2 {
+  animation: prueba 10s;
+}
+ .item3 {
+  animation: example2 10s;
+}
+ol, p{
+  font-size: small;
+  justify-content: center;
+  list-style:decimal;
+  line-height: 25px;
+  padding: 5%;
+}
+.title{
+  padding-top: 8%;
+  text-align: center;
+  text-indent: 12%;
+  
+}
+
+
+  /* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  header {
+    height: 125px;
+    background-image: url(/img/tabletsheader.png);
+  }
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    height: 150px;
+    background-image: url(/img/desktopsheader.png);
+  }
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header {
+    height: 180px;
+    background-image: url(/img/largedesktopsheader.png);
+  }
+}
+
+/* X-Large devices (large des
+  header {
+    background-image: url(/img/largedesktopsheader.png);
+  }ktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header {
+    height: 180px;
+    background-image: url(/img/largerdesktopsheader.png);
+ 
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  header {
+    height: 200px;
+    background-image: url(/img/largedesktopsheader.png);
+  
+  }
+}
