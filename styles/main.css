@@ -48,7 +48,7 @@
 header {
     width: 100%;
     height: 100px;
-    background-image: url(mobileheader.png);
+    background-image: url(/mobileheader.png);
     background-size:contain;
     background-color: var(--section2-color);
     background-repeat: no-repeat;
@@ -123,13 +123,13 @@ a{
 }
 
 .facebook:hover{
-  content: url(fb2.jpg.png);
+  content: url(/fb2.jpg.png);
 }
 .instagram:hover{
-  content: url(instagram2.png);
+  content: url(/instagram2.png);
 }
 .twitter:hover{
-  content: url(twitter2.png);
+  content: url(/twitter2.png);
 }
 .container{
   padding: 5%;
@@ -272,7 +272,7 @@ ol, p{
 @media screen and (min-width: 992px) {
   header {
     height: 125px;
-    background-image: url(tabletsheader.png);
+    background-image: url(/tabletsheader.png);
   }
   nav{
     display: flex;
@@ -294,7 +294,7 @@ ol, p{
 @media screen and (min-width: 768px) {
   header {
     height: 150px;
-    background-image: url(desktopsheader.png);
+    background-image: url(/desktopsheader.png);
   }
   
 }
@@ -303,7 +303,7 @@ ol, p{
 @media screen and (min-width: 992px) {
   header {
     height: 180px;
-    background-image: url(largedesktopsheader.png);
+    background-image: url(/largedesktopsheader.png);
   }
 }
 
@@ -314,7 +314,7 @@ ol, p{
 @media (min-width: 1200px) {
   header {
     height: 180px;
-    background-image: url(largerdesktopsheader.png);
+    background-image: url(/largerdesktopsheader.png);
  
   }
 }
@@ -323,7 +323,7 @@ ol, p{
 @media (min-width: 1400px) {
   header {
     height: 200px;
-    background-image: url(largedesktopsheader.png);
+    background-image: url(/largedesktopsheader.png);
   
   }
 }
