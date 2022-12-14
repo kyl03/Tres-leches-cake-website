@@ -294,7 +294,7 @@ ol, p{
 @media screen and (min-width: 768px) {
   header {
     height: 150px;
-    background-image: url(./desktopsheader.png);
+    background-image: url(/desktopsheader.png);
   }
   
 }
